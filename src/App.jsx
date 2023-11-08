@@ -12,7 +12,7 @@ function App() {
   const [reproduciendo, setReproduciendo] = useState(null)
   const audioRef = useRef(audio)
   useEffect(() => {
-    axios.get("http://backmusic.ddns.net:20000/api/info")
+    axios.get("http://backmusic.ddns.net:20000/api/info",{ mode: "no-cors" })
       .then(info => setSongs(info.data.reverse()))
   }, [])
 
