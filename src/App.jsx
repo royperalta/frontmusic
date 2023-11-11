@@ -12,7 +12,7 @@ function App() {
   const [reproduciendo, setReproduciendo] = useState(null)
   const audioRef = useRef(audio)
   useEffect(() => {
-    axios.get("http://backmusic.ddns.net:20000/api/info",{ mode: "no-cors" })
+    axios.get("https://envivo.top:9100/api/info")
       .then(info => setSongs(info.data.reverse()))
   }, [])
 
