@@ -5,6 +5,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 .loader {
   border: 2px solid;

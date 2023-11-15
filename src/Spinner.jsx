@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.css"
 export default function Spinner() {
   return (
-    <div>
+    <div className=''>
         <span className="loader"></span>
     </div>
   )
